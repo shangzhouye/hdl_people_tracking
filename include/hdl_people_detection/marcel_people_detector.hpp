@@ -104,7 +104,7 @@ private:
     kdtree->setInputCloud(cloud);
 
     pcl::EuclideanClusterExtraction<pcl::PointXYZI> extractor;
-    extractor.setClusterTolerance(0.2);
+    extractor.setClusterTolerance(0.1);
     extractor.setMinClusterSize(16);
     extractor.setMaxClusterSize(8192 * 16);
     extractor.setInputCloud(cloud);
