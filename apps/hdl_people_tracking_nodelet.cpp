@@ -168,7 +168,7 @@ private:
       text.pose.position = point;
       text.pose.position.z += 0.7;
       text.color.r = text.color.g = text.color.b = text.color.a = 1.0;
-      text.text = (boost::format("id:%d") % person->id()).str();
+      text.text = (boost::format("Person:%d") % person->id()).str();
 
       markers.markers.push_back(text);
     }
